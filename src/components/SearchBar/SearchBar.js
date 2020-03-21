@@ -22,13 +22,13 @@ class SearchBar extends Component {
   }
 
   handleSearch(event) {
-    console.log(this.state.dateRange);
+    this.props.searchDateRange(this.state.dateRange);
     event.preventDefault()
   }
 
   handleKeyPress(event) {
     if (event.key === 'Enter') {
-      console.log(this.state.dateRange);
+      this.props.searchDateRange(this.state.dateRange);
       event.preventDefault()
     }
   }
