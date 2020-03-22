@@ -1,0 +1,67 @@
+.email-row > a {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 15px 0;
+  border-bottom: 1px solid #DDD;
+  font-weight: 300;
+  font-size: 0.9em;
+  color: grey;
+  text-decoration: none;
+  color: black;
+  white-space: nowrap;
+}
+
+.email-row > a:hover { 
+  color: blue;
+}
+
+.email-row > a:hover > .attachment-wrapper > .attachment-details {
+  filter: sepia(100) saturate(30) hue-rotate(210deg) brightness(98%);
+}
+
+.from-wrapper {
+  width: 15%;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.from-details {
+  width: 75%;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+}
+
+.to-details {
+  width: 20%;
+  text-align: left;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+}
+
+.additional-recipients-details {
+  width: 10%;
+}
+
+.subject-details {
+  width: 40%;
+  text-align: left;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+}
+
+.attachment-wrapper {
+  text-align: right;
+  width: 5%;
+}
+
+.attachment-details {
+  width: 15px;
+  padding-right: 15px;
+}
+
+.date-details {
+  width: 5%;
+  text-align: left;
+}
+

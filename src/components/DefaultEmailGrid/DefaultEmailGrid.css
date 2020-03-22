@@ -1,0 +1,6 @@
+.default-grid {
+  display: flex;
+  direction: column;
+  justify-content: center;
+  margin-top: 10%;
+}

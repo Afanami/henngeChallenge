@@ -5,7 +5,7 @@ import logo from './logo.png';
 class DefaultEmailGrid extends Component {
   render() {
     return (
-      <div className="email-grid">
+      <div className="default-grid">
         <img src={logo}></img>
       </div>
     );
