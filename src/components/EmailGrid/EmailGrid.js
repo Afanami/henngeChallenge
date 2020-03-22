@@ -3,6 +3,7 @@ import './EmailGrid.css';
 import Email from '../Email/Email.js';
 import DefaultEmailGrid from '../DefaultEmailGrid/DefaultEmailGrid.js';
 import arrowIcon from './icon_arrow01.svg';
+import logo from './logo.png';
 
 class EmailGrid extends Component {
   constructor(props) {
@@ -64,8 +65,8 @@ class EmailGrid extends Component {
     let displayGrid;
     let displayHeader;
 
-    if (this.props.emails && this.props.emails.length === 0 || this.props.emails === []) {
-      displayGrid = <DefaultEmailGrid />
+    if ((this.props.emails && this.props.emails.length === 0) || !this.props.emails) {
+      displayGrid = <DefaultEmailGrid logo={logo} />
     } else if (this.props.emails) {
       displayHeader =
         <div className="header">
