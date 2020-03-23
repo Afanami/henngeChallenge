@@ -60,9 +60,9 @@ class Email extends Component {
                   {this.props.email.from}
                 </div>
                 <div className={this.props.dateBold ? "extra-details-mobile bold" : "extra-details-mobile"}>
-                  <img className="attachment-icon-mobile" src={attachmentIcon}></img>
+                  <img className="attachment-icon-mobile" src={attachmentIcon} alt="View attachments"></img>
                   {this.props.email.dateDisplay}
-                  <img className="chevron-icon" src={chevronIcon}></img>
+                  <img className="chevron-icon" src={chevronIcon} alt="View email"></img>
                 </div>
               </div>
               <div className="additional-details-mobile">
@@ -104,7 +104,7 @@ class Email extends Component {
               {this.props.email.subject}
             </div>
             <div className="attachment-icon-wrapper">
-              <img className="attachment-icon" src={attachmentIcon}></img>
+              <img className="attachment-icon" src={attachmentIcon} alt="View attachments"></img>
             </div>
             <div className={this.props.dateBold ? "date-details bold" : "date-details"}>
               {this.props.email.dateDisplay}

@@ -45,10 +45,10 @@ class SearchBar extends Component {
     return (
       <div className="searchbar">
         <div className="searchbar-fields" >
-          <img className="calendar-icon" src={calendarIcon}></img>
+          <img className="calendar-icon" src={calendarIcon} alt="Select a date range"></img>
           <input placeholder="Filter date range" onChange={this.handleDateChange} onKeyPress={this.handleKeyPress} autoFocus />
           <div className="search-icon-border">
-            <img className="search-icon" src={searchIcon} onClick={this.handleSearch}></img>
+            <img className="search-icon" src={searchIcon} alt="Search archived emails" onClick={this.handleSearch}></img>
           </div>
         </div>
       </div>
