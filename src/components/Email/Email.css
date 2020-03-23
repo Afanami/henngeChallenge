@@ -125,6 +125,7 @@
   padding: 15px 20px;
   border-bottom: 1px solid #DDD;
   white-space: nowrap;
+  overflow: hidden;
 }
 
 .mail-icon-container, .details-container-mobile, .details-from-mobile, .extra-details-mobile,
