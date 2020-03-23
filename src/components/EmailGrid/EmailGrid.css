@@ -3,12 +3,12 @@ h3 {
 }
 
 .email-grid {
-  margin: -20px 50px;
+  margin: -5% 5% 2% 5%;
 }
 
 .results {
   text-align: left;
-  padding: 10px 0;
+  padding: 2% 0 1% 0;
   border-bottom: 1px solid #DDD;
   width: 100%;
   color: grey;
@@ -29,7 +29,7 @@ h3 {
 .from {
   width: 15%;
   text-align: left;
-  padding-left: 10px;
+  padding-left: 2%;
 }
 
 .to {
@@ -56,7 +56,7 @@ strong {
 
 .arrow-icon {
   width: 10px;
-  padding: 0 0 2px 8px;
+  padding: 0 0 1% 5%;
 }
 
 .inactive {
@@ -74,13 +74,12 @@ strong {
   }
 
   .results {
-    padding-left: 30px;
+    padding-left: 7%;
   }
 
   .from {
     width: 20%;
     text-align: left;
-    padding-left: 10px;
   }
   
   .to {
@@ -100,11 +99,11 @@ strong {
   }
 
   .header > div:not(:last-child) {
-    margin-right: 40px;
+    margin-right: 5%;
     border-right: 1px solid rgb(8, 8, 8);
   }
 
-  .header > div:not(:first-child) {
-    /* margin-left: -20px; */
+  .header > div:first-child {
+    padding-left: 7%;
   }
 }

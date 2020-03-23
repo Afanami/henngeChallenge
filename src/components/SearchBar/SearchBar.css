@@ -5,8 +5,7 @@
   height: 100%;
   width: 100%;
   border: "1px solid";
-  margin: 35px 50px;
-  
+  margin: 3% 5% 5% 5%;
 }
 
 .searchbar-fields {
@@ -27,7 +26,7 @@
   border: none;
   outline: none;
   font-size: 1em;
-  padding-right: 7%;
+  margin-right: 7%;
 }
 
 .calendar-icon {
@@ -54,7 +53,7 @@
 @media (max-width: 500px) {
   .searchbar {
     margin: 0;
-    padding-left: 30px;
-    padding-top: 35px;
+    padding-left: 7%;
+    padding-top: 5%;
   }
 }
