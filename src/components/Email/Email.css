@@ -37,14 +37,14 @@
 
 .from-details {
   width: 75%;
-  overflow-x: hidden;
+  overflow: hidden;
   text-overflow: ellipsis;
 }
 
 .to-details {
   width: 20%;
   text-align: left;
-  overflow-x: hidden;
+  overflow: hidden;
   text-overflow: ellipsis;
 }
 
@@ -55,7 +55,7 @@
 .subject-details {
   width: 40%;
   text-align: left;
-  overflow-x: hidden;
+  overflow: hidden;
   text-overflow: ellipsis;
 }
 
@@ -125,7 +125,6 @@
   padding: 15px 20px;
   border-bottom: 1px solid #DDD;
   white-space: nowrap;
-  overflow: hidden;
 }
 
 .mail-icon-container, .details-container-mobile, .details-from-mobile, .extra-details-mobile,
@@ -152,7 +151,7 @@
 
 .details-from-mobile {
   width: 70%;
-  overflow-x: hidden;
+  overflow: hidden;
   text-overflow: ellipsis;
 }
 
@@ -186,7 +185,7 @@
 
 .details-to-mobile {
   width: 80%;
-  overflow-x: hidden;
+  overflow: hidden;
   text-overflow: ellipsis;
 }
 
@@ -202,114 +201,9 @@
 
 .subject-mobile {
   width: 100%;
-  overflow-x: hidden;
+  overflow: hidden;
   text-overflow: ellipsis;
   padding-bottom: 1px;
 }
-/* .from-wrapper-mobile {
-  display: inline-block;
-  width: 90%;
-}
 
-.chevron-icon {
-  width: 3px;
-}
 
-.mail-icon {
-  display: inline-block;
-  width: 15px;
-}
-
-.attachment-icon-mobile {
-  width: 15px;
-}
-
-.mail-icon-wrapper {
-  display: inline-block;
-}
-
-.from-details-mobile {
-}
-
-.date-details-mobile {
-  float: right;
-}
-
-.to-details-mobile {
-  display: block;
-  width: 90%;
-  overflow-x: hidden;
-  text-overflow: ellipsis;
-} */
-
-/* @media (max-width: 768px) {
-  .email-row {
-    display: inline-block;
-    position: relative;
-    padding: 5px 20px;
-  }
-  
-  .from-details,
-  .to-details,
-  .subject-details,
-  .attachment-details,
-  .date-details,
-  .additional-recipients-details-wrapper {
-    padding: 5px 0;
-  }
-  
-  .from-wrapper {
-    width: 100%;
-    text-align: left;
-  }
-  
-  .from-details {
-    width: 100%;
-    overflow-x: hidden;
-    text-overflow: ellipsis;
-  }
-  
-  .to-details {
-    width: 100%;
-    text-align: left;
-    overflow-x: hidden;
-    text-overflow: ellipsis;
-    padding-left: 10px;
-  }
-  
-  .additional-recipients-details-wrapper {
-    width: 10%;
-  }
-  
-  .subject-details {
-    width: 100%;
-    text-align: left;
-    overflow-x: hidden;
-    text-overflow: ellipsis;
-  }
-  
-  .attachment-wrapper {
-    width: 5%;
-    text-align: right;
-  }
-  
-  .attachment-details {
-    width: 15px;
-    padding-right: 15px;
-  }
-  
-  .date-details {
-    width: 100%;
-    text-align: left;
-  }
-  
-  .additional-recipients-details {
-    color: white;
-    width: 25px;
-    float: right;
-    padding: 2px 0;
-    margin-right: 30%;
-    background: rgb(155, 143, 143);
-    border-radius: 3px;
-  }
-} */
