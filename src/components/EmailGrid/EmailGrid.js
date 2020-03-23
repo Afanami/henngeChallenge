@@ -70,7 +70,7 @@ class EmailGrid extends Component {
     if (this.props.emails === null) {
       displayGrid = "";
       displayResults = <div className="first-render">
-        <h3><strong>Welcome to Mail Archiver. Please enter a valid date range in the searchbar.<br /> i.e. 2019/12/31 - 2020/1/3</strong></h3>
+        <h4><strong>Welcome to Mail Archiver. Please enter a valid date range in the searchbar.<br /> i.e. 2019/12/31 - 2020/1/3</strong></h4>
       </div>
     } else if ((this.props.emails && this.props.emails.length === 0) || !this.props.emails) {
       displayGrid = <DefaultEmailGrid />
