@@ -1,8 +1,28 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A link to the website can be found [here](https://afan-ahmed-hennge-challenge.netlify.com)
 
-## Available Scripts
+## Navigating the Website
 
-In the project directory, you can run:
+The website is made to be dynamic and as such the UI mockups need to be viewed by filtering through the dummy data within the website.
+
+**Please note there are only emails between the date range 2019/12/31 - 2020/1/3 so filter accordingly!**
+
+Dummy JSON data has been created based on the UI mockups provided.
+
+### `No Results UI`
+
+To get to this UI please either enter an **INVALID** date range **OR** nothing in the date range input.
+
+### `Desktop UI`
+
+To get to this UI to match the one in the mockup please filter by the date range **2019/12/31 - 2020/1/3**.
+
+Then click on the **Date** header and hover the cursor over the correct email row.
+
+**NOTE** Clicking the headers will bold the columns and their data!! 
+
+### `Mobile UI`
+
+To get to this UI please reduce the browser width below `500px` OR open the chrome developer tools and select responsive view (iPhone 6/7/8).
 
 ### `yarn start`
 
@@ -31,38 +51,3 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 **Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify

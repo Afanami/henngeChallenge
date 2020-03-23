@@ -27,5 +27,12 @@ The **From | To | Subject | Date** here in the header were too compact. This wou
 
 Similarly to the desktop UI, the list of recipients could be reduced to display just **You + additional recipients indicator** so there is less clutter and the interface is made more minimalistic for a sleeker look.
 
+Similarly to the desktop UI, the **attachments icon** could be replaced with the actual email attachments and appened at the bottom of the email row. This would allow the user to view attachments without necessarily having to go into the email as well as get a better understanding of the email through it's attachments.
+
+## General Improvements
+
+Please note this code is far from complete and is only a bare minimum to enable the representation of the mock UIs.
+If you would like to discuss how I would further improve the code itself feel free to ask!
+
 
 
