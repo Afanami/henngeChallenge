@@ -27,6 +27,7 @@
   border: none;
   outline: none;
   font-size: 1em;
+  padding-right: 7%;
 }
 
 .calendar-icon {
@@ -41,9 +42,8 @@
 }
 
 .search-icon-border {
-  width: 20%;
+  width: 100%;
   height: 100%;
-  margin-left: 7%;
   border-left: 1px solid #DDD;
   background-color: #EEE;
   -webkit-box-shadow: 0px 0px 20px -8px rgba(221,221,221,1);
