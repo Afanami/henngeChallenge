@@ -68,7 +68,7 @@ strong {
   color: black;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 500px) {
   .email-grid {
     margin: 0;
   }
@@ -97,5 +97,14 @@ strong {
   .date {
     width: 20%;
     text-align: left;
+  }
+
+  .header > div:not(:last-child) {
+    margin-right: 40px;
+    border-right: 1px solid rgb(8, 8, 8);
+  }
+
+  .header > div:not(:first-child) {
+    /* margin-left: -20px; */
   }
 }
