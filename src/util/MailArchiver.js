@@ -14,8 +14,6 @@ let MailArchiver = {
     let dateMin = new Date(dateRangeArray[0]).setHours(0, 0, 0);
     let dateMax = new Date(dateRangeArray[1]).setHours(23, 59, 59);
 
-    console.log(filteredJson);
-
     filteredJson = filteredJson.filter(email => {
       const emailDate = new Date(email.date);
       const todaysDate = new Date(dateMax);
@@ -33,9 +31,6 @@ let MailArchiver = {
         return email;
       }
     });
-
-    console.log(filteredJson);
-
 
     if (filteredJson.length === 0) {
       return alert('No valid emails found for that date range');

@@ -1,22 +1,23 @@
-.email-row > a {
+.email-row {
   display: flex;
   flex-direction: row;
+  color: black;
   width: 100%;
   padding: 15px 0;
   border-bottom: 1px solid #DDD;
   font-weight: 400;
   font-size: 0.9em;
-  color: grey;
   text-decoration: none;
-  color: black;
   white-space: nowrap;
 }
 
-.email-row > a:hover { 
+.email-row:hover { 
   color: blue;
+  background-color: rgb(245, 250, 253);
+  cursor: pointer;
 }
 
-.email-row > a:hover > .attachment-wrapper > .attachment-details {
+.email-row:hover > .attachment-wrapper > .attachment-details {
   filter: sepia(100) saturate(30) hue-rotate(210deg) brightness(98%);
 }
 
@@ -39,7 +40,7 @@
   text-overflow: ellipsis;
 }
 
-.additional-recipients-details {
+.additional-recipients-details-wrapper {
   width: 10%;
 }
 
@@ -51,8 +52,8 @@
 }
 
 .attachment-wrapper {
-  text-align: right;
   width: 5%;
+  text-align: right;
 }
 
 .attachment-details {
@@ -65,3 +66,40 @@
   text-align: left;
 }
 
+.additional-recipients-details {
+  color: white;
+  width: 25px;
+  float: right;
+  padding: 2px 0;
+  margin-right: 30%;
+  background: rgb(180, 173, 173);
+  border-radius: 3px;
+}
+
+/* state derived CSS */
+.email-body-inactive {
+  position: absolute;
+  display: block;
+  visibility: hidden;
+  max-height: 0;
+  opacity: 0;
+  -webkit-transition: opacity 0.25s ease-in-out, max-height 0.1s ease-in-out;
+  transition: opacity 0.25s ease-in-out, max-height 0.1s ease-in-out;
+}
+
+.email-body-active {
+  overflow: hidden;
+  visibility: visible;
+  text-align: left;
+  padding: 20px 30px;
+  border-bottom: 1px solid #DDD;
+  max-height: 500px;
+  opacity: 1;
+  -webkit-transition: opacity 0.3s ease-in-out, max-height 1s ease-in-out;
+  transition: opacity 0.3s ease-in-out, max-height 2s ease-in-out;
+}
+
+.email-row-highlight {
+  color: blue;
+  background-color: rgb(245, 250, 253);
+}

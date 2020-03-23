@@ -8,7 +8,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      emails: []
+      emails: null
     };
 
     this.searchDateRange = this.searchDateRange.bind(this);
@@ -22,7 +22,7 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App" >
+      <div className="app">
         <SearchBar searchDateRange={this.searchDateRange} />
         <EmailGrid emails={this.state.emails} />
       </div>

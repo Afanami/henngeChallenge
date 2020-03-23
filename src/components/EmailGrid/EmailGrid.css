@@ -1,5 +1,14 @@
+h3 {
+  font-weight: 600;
+}
+
+.email-grid {
+  margin: -20px 50px;
+}
+
 .results {
   text-align: left;
+  padding: 10px 0;
   border-bottom: 1px solid #DDD;
   width: 100%;
   color: grey;
@@ -24,23 +33,15 @@
 }
 
 .to {
-  width: 20%;
-  text-align: left;
-}
-
-.additional-recipients {
-  width: 10%;
+  width: 30%;
   text-align: left;
 }
 
 .subject {
-  width: 40%;
+  width: 45%;
   text-align: left;
 }
 
-.attachment {
-  width: 5%;
-}
 
 .date {
   width: 5%;
@@ -65,4 +66,36 @@ strong {
 .bold {
   font-weight: 700;
   color: black;
+}
+
+@media (max-width: 768px) {
+  .email-grid {
+    margin: 0;
+  }
+
+  .results {
+    padding-left: 30px;
+  }
+
+  .from {
+    width: 20%;
+    text-align: left;
+    padding-left: 10px;
+  }
+  
+  .to {
+    width: 15%;
+    text-align: left;
+  }
+  
+  .subject {
+    width: 25%;
+    text-align: left;
+  }
+  
+  
+  .date {
+    width: 20%;
+    text-align: left;
+  }
 }

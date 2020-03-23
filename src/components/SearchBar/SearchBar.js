@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './SearchBar.css';
-import searchIcon from './icon_search.svg';
-import calendarIcon from './icon_calender.svg';
+import searchIcon from './../../images/icon_search.svg';
+import calendarIcon from './../../images/icon_calender.svg';
 
 class SearchBar extends Component {
   constructor(props) {
@@ -22,12 +22,20 @@ class SearchBar extends Component {
   }
 
   handleSearch(event) {
+    // remove later just for testing
+    this.setState({
+      dateRange: "2019/12/31 - 2020/1/3"
+    })
     this.props.searchDateRange(this.state.dateRange);
     event.preventDefault()
   }
 
   handleKeyPress(event) {
     if (event.key === 'Enter') {
+      // remove later just for testing
+      this.setState({
+        dateRange: "2019/12/31 - 2020/1/3"
+      })
       this.props.searchDateRange(this.state.dateRange);
       event.preventDefault()
     }
