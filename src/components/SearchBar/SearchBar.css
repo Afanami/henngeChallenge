@@ -26,12 +26,12 @@
   border: none;
   outline: none;
   font-size: 1em;
-  margin-right: 7%;
+  margin-right: 25px;
 }
 
 .calendar-icon {
   height: 50%;
-  margin: 4% 4% 4% 6%;
+  margin: 10px 10px 10px 15px;
 }
 
 .search-icon {
