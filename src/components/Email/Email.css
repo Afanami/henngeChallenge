@@ -20,6 +20,15 @@
   filter: sepia(100) saturate(30) hue-rotate(210deg) brightness(98%);
 }
 
+.from-details,
+.to-details,
+.subject-details,
+.attachment-details,
+.date-details,
+.additional-recipients-details-wrapper {
+  padding: 15px 0;
+}
+
 .from-wrapper {
   width: 15%;
   text-align: left;
@@ -30,15 +39,6 @@
   width: 75%;
   overflow-x: hidden;
   text-overflow: ellipsis;
-}
-
-.from-details,
-.to-details,
-.subject-details,
-.attachment-details,
-.date-details,
-.additional-recipients-details-wrapper {
-  padding: 15px 0;
 }
 
 .to-details {
@@ -80,7 +80,7 @@
   float: right;
   padding: 2px 0;
   margin-right: 30%;
-  background: rgb(180, 173, 173);
+  background: rgb(170, 159, 159);
   border-radius: 3px;
 }
 
