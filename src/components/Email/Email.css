@@ -3,7 +3,6 @@
   flex-direction: row;
   color: black;
   width: 100%;
-  padding: 20px 0;
   border-bottom: 1px solid #DDD;
   font-weight: 400;
   font-size: 0.9em;
@@ -31,6 +30,15 @@
   width: 75%;
   overflow-x: hidden;
   text-overflow: ellipsis;
+}
+
+.from-details,
+.to-details,
+.subject-details,
+.attachment-details,
+.date-details,
+.additional-recipients-details-wrapper {
+  padding: 15px 0;
 }
 
 .to-details {
