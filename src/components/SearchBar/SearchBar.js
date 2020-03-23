@@ -22,20 +22,12 @@ class SearchBar extends Component {
   }
 
   handleSearch(event) {
-    // remove later just for testing
-    this.setState({
-      dateRange: "2019/12/31 - 2020/1/3"
-    })
     this.props.searchDateRange(this.state.dateRange);
     event.preventDefault()
   }
 
   handleKeyPress(event) {
     if (event.key === 'Enter') {
-      // remove later just for testing
-      this.setState({
-        dateRange: "2019/12/31 - 2020/1/3"
-      })
       this.props.searchDateRange(this.state.dateRange);
       event.preventDefault()
     }
