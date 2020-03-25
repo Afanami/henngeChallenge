@@ -1,3 +1,6 @@
+/*************************/
+/* DESKTOP component CSS */
+/*************************/
 .email-row {
   display: -webkit-box;
   display: -moz-box;
@@ -89,7 +92,7 @@
   float: right;
   padding: 2px 0;
   margin-right: 30%;
-  background: rgb(155, 143, 143);
+  background: rgb(128, 118, 118);
   border-radius: 3px;
 }
 
@@ -114,7 +117,6 @@
   border-bottom: 1px solid #DDD;
   max-height: 500px;
   opacity: 1;
-  -webkit-transition: opacity 0.3s ease-in-out, max-height 1s ease-in-out;
   -webkit-transition: opacity 0.3s ease-in-out, max-height 2s ease-in-out;
   transition: opacity 0.3s ease-in-out, max-height 2s ease-in-out;
 }

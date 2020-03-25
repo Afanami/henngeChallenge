@@ -33,6 +33,8 @@ Similarly to the desktop UI, the **attachments icon** could be replaced with the
 
 The UI should allow the user to click the calendar icom which drops down a date range filter the user can select from. This is essential to UI/UX nowadays as users are quite impatient and prefer minimal effort in operations and would not want to manually enter a date.
 
+For some reason the arrow icon was pointing UP but the sort order of the table was incorrect. An upward pointing arrow should mean the largest dates are at the bottom and the smallest dates are at the top. (largest being most recent and smallest being least recent). The way I have implemented uses this logic with the arrows and ordering of the table.
+
 **Please note this code is far from complete and is only a bare minimum to enable the representation of the mock UIs.**
 **If you would like to discuss how I would further improve the code itself feel free to ask!**
 

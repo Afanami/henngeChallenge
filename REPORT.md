@@ -19,3 +19,5 @@ Once I had my data flowing I created the desktop version of the `Email` componen
 Another challenge I countered while styling was getting the SVG attachments icon colour to change on hover. I tried using `fill: blue` but this did not work. I eventually learned another new piece of information to achieve this and that was the `filter` css property. After finishing the styling on the desktop `Email` component I went ahead and created the mobile version of it!
 
 At the end I cleaned up any styling and got frustrated here and there when I couldn't get some styles working. However, when I finally did start getting them working it was an amazing feeling and sense of achievement!
+
+Before submitting my code I decided to refactor some logic here and there as well as restyle some areas as they could have been done better. I also added sorting functionality to the grid in case this was required. Not described in the challenges but figured this would be important.
