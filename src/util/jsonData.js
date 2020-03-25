@@ -111,4 +111,4 @@ let jsonData = [
   }
 ];
 
-export default jsonData = jsonData;
+export default jsonData;

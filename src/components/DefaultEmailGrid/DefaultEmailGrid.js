@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './DefaultEmailGrid.css';
 import logo from '../../images/logo.png';
 

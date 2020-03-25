@@ -33,19 +33,19 @@ class EmailGrid extends Component {
       <div className="header">
         <div className={this.state.fromActive ? "from bold" : "from"} onClick={() => this.toggleClass('fromActive')}>
           From
-      <img className={this.state.fromActive ? "arrow-icon" : "arrow-icon inactive"} src={arrowIcon} />
+      <img className={this.state.fromActive ? "arrow-icon" : "arrow-icon inactive"} src={arrowIcon} alt="click to bold" />
         </div>
         <div className={this.state.toActive ? "to bold" : "to"} onClick={() => this.toggleClass('toActive')}>
           To
-      <img className={this.state.toActive ? "arrow-icon" : "arrow-icon inactive"} src={arrowIcon} />
+      <img className={this.state.toActive ? "arrow-icon" : "arrow-icon inactive"} src={arrowIcon} alt="click to bold" />
         </div>
         <div className={this.state.subjectActive ? "subject bold" : "subject"} onClick={() => this.toggleClass('subjectActive')}>
           Subject
-      <img className={this.state.subjectActive ? "arrow-icon" : "arrow-icon inactive"} src={arrowIcon} />
+      <img className={this.state.subjectActive ? "arrow-icon" : "arrow-icon inactive"} src={arrowIcon} alt="click to bold" />
         </div>
         <div className={this.state.dateActive ? "date bold" : "date"} onClick={() => this.toggleClass('dateActive')}>
           Date
-      <img className={this.state.dateActive ? "arrow-icon" : "arrow-icon inactive"} src={arrowIcon} />
+      <img className={this.state.dateActive ? "arrow-icon" : "arrow-icon inactive"} src={arrowIcon} alt="click to bold" />
         </div>
       </div>
     )

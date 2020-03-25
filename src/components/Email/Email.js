@@ -16,7 +16,7 @@ class Email extends Component {
     this.toggleEmailBodyClass = this.toggleEmailBodyClass.bind(this);
   }
 
-  componentWillMount() {
+  componentDidMount() {
     window.addEventListener('resize', this.handleWindowSizeChange);
   }
 
