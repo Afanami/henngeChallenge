@@ -10,15 +10,17 @@ Dummy JSON data has been created based on the UI mockups provided.
 
 ### `No Results UI`
 
-To get to this UI please either enter an **INVALID** date range **OR** nothing in the date range input.
+To get to this UI please either enter an **INVALID** date range **OR nothing** in the date range input.
 
 ### `Desktop UI`
+
+This is the UI by default. **Note: normally this would display the most latest results but due to the mock UI having limited data I have made it such that the latest results are those of the mock data.**
 
 To get to this UI to match the one in the mockup please filter by the date range **2019/12/31 - 2020/1/3**.
 
 Then click on the **Date** header and hover the cursor over the correct email row.
 
-**NOTE** Clicking the headers will bold the columns and their data!! 
+**NOTE** Clicking the headers will bold the columns and their data as well as sort the grid!! 
 
 ### `Mobile UI`
 

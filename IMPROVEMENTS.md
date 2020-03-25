@@ -31,8 +31,10 @@ Similarly to the desktop UI, the **attachments icon** could be replaced with the
 
 ## General Improvements
 
-Please note this code is far from complete and is only a bare minimum to enable the representation of the mock UIs.
-If you would like to discuss how I would further improve the code itself feel free to ask!
+The UI should allow the user to click the calendar icom which drops down a date range filter the user can select from. This is essential to UI/UX nowadays as users are quite impatient and prefer minimal effort in operations and would not want to manually enter a date.
+
+**Please note this code is far from complete and is only a bare minimum to enable the representation of the mock UIs.**
+**If you would like to discuss how I would further improve the code itself feel free to ask!**
 
 
 
