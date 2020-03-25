@@ -30,9 +30,9 @@ class EmailGrid extends Component {
     if (this.state[className] === '') {
       this.props.emails.sort((a, b) => {
         if (sortByClassName === 'to') {
-          return (a[sortByClassName][0] > b[sortByClassName][0]) ? 1 : (b[sortByClassName][0] > a[sortByClassName][0]) ? -1 : 0;
+          return (a[sortByClassName][0] > b[sortByClassName][0]) ? 1 : (b[sortByClassName][0] >= a[sortByClassName][0]) ? -1 : 0;
         } else {
-          return (a[sortByClassName] > b[sortByClassName]) ? 1 : (b[sortByClassName] > a[sortByClassName]) ? -1 : 0;
+          return (a[sortByClassName] > b[sortByClassName]) ? 1 : (b[sortByClassName] >= a[sortByClassName]) ? -1 : 0;
         }
       });
 
