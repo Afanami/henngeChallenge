@@ -7,7 +7,7 @@ class SearchBar extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      dateRange: null
+      dateRange: '2019/12/31 - 2020/1/3'
     };
 
     this.handleDateChange = this.handleDateChange.bind(this);
@@ -36,10 +36,14 @@ class SearchBar extends Component {
   render() {
     return (
       <div className="searchbar">
-        <div className="searchbar-fields" >
-          <img className="calendar-icon" src={calendarIcon} alt="Select a date range"></img>
-          <input placeholder="Filter date range" onChange={this.handleDateChange} onKeyPress={this.handleKeyPress} autoFocus />
-          <div className="search-icon-border">
+        <div className="searchbar-items">
+          <div className="calendar-icon-container" >
+            <img className="calendar-icon" src={calendarIcon} alt="Select a date range"></img>
+          </div>
+          <div className="input-container">
+            <input placeholder="Filter date range" value={this.state.dateRange} onChange={this.handleDateChange} onKeyPress={this.handleKeyPress} autoFocus />
+          </div>
+          <div className="search-icon-container">
             <img className="search-icon" src={searchIcon} alt="Search archived emails" onClick={this.handleSearch}></img>
           </div>
         </div>

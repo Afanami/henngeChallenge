@@ -8,7 +8,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      emails: null
+      emails: MailArchiver.retrieveEmails('2019/12/31 - 2020/1/3')
     };
 
     this.searchDateRange = this.searchDateRange.bind(this);

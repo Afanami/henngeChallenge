@@ -47,6 +47,7 @@ class Email extends Component {
     const isMobile = width <= 500;
     let attachmentIcon = this.props.email.attachment ? clipIcon : '';
 
+    // Render mobile component if width less than 500px can further adjust this with @MEDIA QUERIES
     if (isMobile) {
       return (
         <React.Fragment>

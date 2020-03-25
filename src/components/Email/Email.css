@@ -1,6 +1,14 @@
 .email-row {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+     -moz-box-orient: horizontal;
+     -moz-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   color: black;
   width: 100%;
   border-bottom: 1px solid #DDD;
@@ -17,7 +25,8 @@
 }
 
 .email-row:hover > .attachment-wrapper > .attachment-icon {
-  filter: sepia(100) saturate(30) hue-rotate(210deg) brightness(98%);
+  -webkit-filter: sepia(100) saturate(30) hue-rotate(210deg) brightness(98%);
+          filter: sepia(100) saturate(30) hue-rotate(210deg) brightness(98%);
 }
 
 .from-details,
@@ -106,6 +115,7 @@
   max-height: 500px;
   opacity: 1;
   -webkit-transition: opacity 0.3s ease-in-out, max-height 1s ease-in-out;
+  -webkit-transition: opacity 0.3s ease-in-out, max-height 2s ease-in-out;
   transition: opacity 0.3s ease-in-out, max-height 2s ease-in-out;
 }
 
@@ -116,7 +126,8 @@
 
 .email-row-highlight > 
 .attachment-icon-mobile {
-  filter: sepia(100) saturate(30) hue-rotate(210deg) brightness(98%);
+  -webkit-filter: sepia(100) saturate(30) hue-rotate(210deg) brightness(98%);
+          filter: sepia(100) saturate(30) hue-rotate(210deg) brightness(98%);
 }
 
 /************************/
@@ -139,7 +150,8 @@
 .details-container-mobile >
 .details-mobile > 
 .extra-details-mobile > .attachment-icon-mobile {
-  filter: sepia(100) saturate(30) hue-rotate(210deg) brightness(98%);
+  -webkit-filter: sepia(100) saturate(30) hue-rotate(210deg) brightness(98%);
+          filter: sepia(100) saturate(30) hue-rotate(210deg) brightness(98%);
 }
 
 .mail-icon-container, .details-container-mobile, .details-from-mobile, .extra-details-mobile,
