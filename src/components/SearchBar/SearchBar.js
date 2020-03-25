@@ -6,6 +6,8 @@ import calendarIcon from './../../images/icon_calender.svg';
 class SearchBar extends Component {
   constructor(props) {
     super(props);
+
+    // Default to show some data
     this.state = {
       dateRange: '2019/12/31 - 2020/1/3'
     };
@@ -15,12 +17,14 @@ class SearchBar extends Component {
     this.handleKeyPress = this.handleKeyPress.bind(this);
   }
 
+  // method to update state as user types in the input field
   handleDateChange(event) {
     this.setState({
       dateRange: event.target.value
     });
   }
 
+  // Methods below handle search via toggle and key press
   handleSearch(event) {
     this.props.searchDateRange(this.state.dateRange);
     event.preventDefault()

@@ -7,6 +7,8 @@ import MailArchiver from "./util/MailArchiver";
 class App extends Component {
   constructor(props) {
     super(props);
+
+    // Return default date range data
     this.state = {
       emails: MailArchiver.retrieveEmails('2019/12/31 - 2020/1/3')
     };
@@ -14,6 +16,7 @@ class App extends Component {
     this.searchDateRange = this.searchDateRange.bind(this);
   }
 
+  // Main handler for filtering between date range
   searchDateRange(dateRange) {
     this.setState({
       emails: MailArchiver.retrieveEmails(dateRange)

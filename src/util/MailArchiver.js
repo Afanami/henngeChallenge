@@ -1,4 +1,5 @@
 import jsonData from './jsonData';
+import moment from 'moment';
 
 const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 
@@ -11,27 +12,32 @@ let MailArchiver = {
       return alert("Please enter a valid - separated date range i.e. 2019/12/31 - 2020/1/3");
     }
 
-    let dateMin = new Date(dateRangeArray[0]).setHours(0, 0, 0);
-    let dateMax = new Date(dateRangeArray[1]).setHours(23, 59, 59);
+    let dateMin = moment(new Date(dateRangeArray[0])).startOf('day');
+    // This is used as "today's date" to replicate mock UI
+    let dateMax = moment(new Date(dateRangeArray[1])).endOf('day');
+    let isValidRange;
 
     filteredJson = filteredJson.filter(email => {
-      const emailDate = new Date(email.date);
-      const todaysDate = new Date(dateMax);
-      const tempEmailDate = new Date(email.date);
+      const emailDate = moment(new Date(email.date));
 
-      if (tempEmailDate.setHours(0, 0, 0, 0) == todaysDate.setHours(0, 0, 0, 0)) {
-        email.dateDisplay = `${emailDate.getHours()}:${emailDate.getMinutes() === 0 ? "00" : emailDate.getMinutes()}`;
-      } else if (tempEmailDate.getFullYear() == todaysDate.getFullYear()) {
-        email.dateDisplay = `${months[emailDate.getMonth()]} ${emailDate.getDay() < 10 ? 0 : ''}${emailDate.getDate()}`;
+      // Format based on different conditions
+      if (emailDate.format('YYYY/MM/DD') == dateMax.format('YYYY/MM/DD')) {
+        email.dateDisplay = emailDate.format('HH:mm');
+      } else if (emailDate.years() == dateMax.years()) {
+        email.dateDisplay = emailDate.format('MMM DD');
       } else {
-        email.dateDisplay = `${emailDate.getFullYear()}/${emailDate.getMonth() + 1}/${emailDate.getDate() < 10 ? 0 : ''}${emailDate.getDate()}`
+        email.dateDisplay = emailDate.format('YYYY/MM/DD');
       }
 
-      if (emailDate >= dateMin && emailDate <= dateMax) {
+      // Check if email is within the filtered range and return
+      isValidRange = emailDate.isBetween(dateMin, dateMax, null, '[]');
+
+      if (isValidRange) {
         return email;
       }
     });
 
+    // Throw alert when no emails are returned
     if (filteredJson.length === 0) {
       return alert('No valid emails found for that date range');
     }

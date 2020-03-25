@@ -15,6 +15,7 @@ class EmailGrid extends Component {
     };
   }
 
+  // Toggles the bold state for the class true 
   toggleClass(className) {
     const newState = {
       fromActive: false,
@@ -28,6 +29,7 @@ class EmailGrid extends Component {
     this.setState({ ...newState });
   }
 
+  // Render the header for grid from|to|subject|date
   renderGridHeader() {
     return (
       <div className="header">
@@ -51,6 +53,7 @@ class EmailGrid extends Component {
     )
   }
 
+  // render each email
   renderGridEmails() {
     let gridEmails;
 

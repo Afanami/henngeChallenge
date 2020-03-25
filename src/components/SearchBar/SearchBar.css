@@ -32,7 +32,7 @@
 }
 
 .calendar-icon-container {
-  width: 30%;
+  width: 80%;
 }
 
 .calendar-icon-container > .calendar-icon {
@@ -53,7 +53,7 @@
 }
 
 .search-icon-container {
-  width: 40%;
+  width: 80%;
   height: 100%;
   border-left: 1.5px solid #DDD;
   border-radius: 0 8px 8px 0;

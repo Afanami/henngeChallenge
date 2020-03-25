@@ -16,6 +16,8 @@ class Email extends Component {
     this.toggleEmailBodyClass = this.toggleEmailBodyClass.bind(this);
   }
 
+  // Keep track of screen width to render mobile component
+  // Can be done via media queries but decided to do it this way instead
   componentDidMount() {
     window.addEventListener('resize', this.handleWindowSizeChange);
   }
@@ -28,6 +30,7 @@ class Email extends Component {
     this.setState({ width: window.innerWidth });
   };
 
+  // Toggle highlight and extended feature which display the email body and keeps it highlight to show its open
   toggleEmailBodyClass() {
     const emailBodyState = this.state.emailBodyActive === 'email-body-inactive' ? 'email-body-active' : 'email-body-inactive';
 
@@ -84,7 +87,7 @@ class Email extends Component {
           </div>
         </React.Fragment>
       );
-    } else {
+    } else { // Render desktop component
       return (
         <React.Fragment>
           <div className={`email-row ${this.state.emailRowHighlight}`} onClick={this.toggleEmailBodyClass}>
