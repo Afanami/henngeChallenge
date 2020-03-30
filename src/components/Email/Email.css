@@ -27,7 +27,7 @@
   cursor: pointer;
 }
 
-.email-row:hover > .attachment-wrapper > .attachment-icon {
+.email-row:hover > .attachment-icon-wrapper > .attachment-icon {
   -webkit-filter: sepia(100) saturate(30) hue-rotate(210deg) brightness(98%);
           filter: sepia(100) saturate(30) hue-rotate(210deg) brightness(98%);
 }
@@ -124,6 +124,11 @@
 .email-row-highlight {
   color: blue;
   background-color: rgb(245, 250, 253);
+}
+
+.email-row-highlight > .attachment-icon-wrapper > .attachment-icon {
+  -webkit-filter: sepia(100) saturate(30) hue-rotate(210deg) brightness(98%);
+          filter: sepia(100) saturate(30) hue-rotate(210deg) brightness(98%);
 }
 
 .email-row-highlight > 
