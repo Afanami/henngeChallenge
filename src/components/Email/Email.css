@@ -131,8 +131,7 @@
           filter: sepia(100) saturate(30) hue-rotate(210deg) brightness(98%);
 }
 
-.email-row-highlight > 
-.attachment-icon-mobile {
+.email-row-highlight > .extra-details-mobile > .attachment-icon-mobile {
   -webkit-filter: sepia(100) saturate(30) hue-rotate(210deg) brightness(98%);
           filter: sepia(100) saturate(30) hue-rotate(210deg) brightness(98%);
 }
